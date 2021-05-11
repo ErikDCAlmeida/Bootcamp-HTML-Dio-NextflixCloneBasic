@@ -71,7 +71,7 @@ header {
 }
 
 .areaBanner {
-  height: 500px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   background-position: center;
@@ -85,7 +85,7 @@ header {
 .bgBanner {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100%;
+  min-height: 500px;
   padding: 50px 0px 20px 10px;
   color: #fff;
   display: flex;
@@ -142,9 +142,26 @@ header {
   background-size: cover;
   transition: all 0.3s;
 }
-.movie:hover{
-    transform: scale(1.05);
+.movie:hover {
+  transform: scale(1.05);
 }
 .movie:last-child {
   margin-right: 0px;
+}
+
+
+@media screen and (max-width: 620px) {
+  .containerHeader{
+    flex-direction: column;
+    align-items: center;
+  }
+  .areaMenu ul {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .areaMenu a {
+    font-size: 0.78rem;
+  }
 }
