@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.areaClone {
+  display: none;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 70px;
+}
+
+.containerHeader {
+  display: flex;
+}
+
+.areaLogo {
+  color: #f00;
+  font-size: 45px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.areaMenu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.areaMenu ul,
+.areaMenu li {
+  list-style: none;
+}
+
+.areaMenu ul {
+  display: flex;
+}
+
+.areaMenu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+.areaMenu a:hover {
+  color: #f00;
+}
+
+.areaMenu .selected {
+  color: #f00;
+}
+
+.areaBanner {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner {
+  margin-bottom: 20px;
+}
+
+.bgBanner {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px 20px 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.nameMovie {
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 10px 0px 10px 0px;
+}
+
+.descMovie {
+  background: transparent;
+  width: 100%;
+  max-width: 600px;
+}
+
+.areaBtnsBanner button {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 25px;
+  margin: 50px 15px 10px 15px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.areaBtnsBanner button:hover {
+  color: #f00;
+}
+
+.slideMovies {
+  overflow-x: hidden;
+}
+
+.areaMovies {
+  padding: 10px 0px 10px 10px;
+  display: flex;
+  width: calc(20 * 260px);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.movie {
+  width: 250px;
+  height: 400px;
+  border-radius: 10px;
+  margin-right: 15px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+.movie:hover{
+    transform: scale(1.05);
+}
+.movie:last-child {
+  margin-right: 0px;
+}
